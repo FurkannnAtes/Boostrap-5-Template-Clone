@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/Bootstrap_logo.svg.png" />
+    <title>Tempalte-Clone</title>
+    <!-- !Boostrap-5 link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- !Boostrap-5 İcons Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <!-- !Css Link -->
+    <link rel="stylesheet" href="Css/still.css" />
+  </head>
+  <body>
+    <!-- !Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-2 px-sm-5 fixed-top">
+      <div class="navbar-brand">Ofenos</div>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMobil"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMobil">
+        <ul class="navbar-nav ms-auto me-5">
+          <li class="nav-item">
+            <a href="#home" class="nav-link btn-close-canvas home active"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link btn-close-canvas about">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link btn-close-canvas services"
+              >Services</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link btn-close-canvas work">Work</a>
+          </li>
+          <li class="nav-item">
+            <a href="#blog" class="nav-link btn-close-canvas blog">Blog</a>
+          </li>
+          <li class="nav-item dropdown" id="dropdown">
+            <span class="nav-link dropdown-toggle">DropDown</span>
+            <ul class="dropdown-menu" id="dropdown-menu">
+              <li>
+                <a class="dropdown-item btn-close-canvas" href="#">Dropdown1</a>
+              </li>
+              <li>
+                <a class="dropdown-item btn-close-canvas" href="#">Dropdown2</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item btn-close-canvas" href="#">Dropdown3</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link me-0 contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- !Navbar End -->
+
+    <!-- !Header Start -->
+    <section
+      id="home"
+      class="d-flex flex-column align-items-center justify-content-center text-white position-relative"
+    >
+      <div class="header-bg position-absolute"></div>
+      <h1 class="h-text">I am Furkan Ateş</h1>
+
+      <h1 class="header-animation-box">
+        <span
+          class="typewrite h-text"
+          data-period="2000"
+          data-words='["Frontend Devoloper","Freelancer"]'
+        ></span>
+        <span class="h-animation"> I</span>
+      </h1>
+    </section>
+
+    <!-- !Header End -->
+
+    <!-- !About Start -->
+
+    <section id="about" class="py-5">
+      <div class="about-me-card row col-lg-10 bg-white mx-auto p-2 pt-5">
+        <div class="profile-card col-xl-6">
+          <div class="p-card-box d-lg-flex">
+            <img
+              src="img/my-logo.jpg"
+              alt=""
+              class="rounded-3 me-5 mb-4 mb-lg-0"
+              style="width: 150px; height: 150px"
+            />
+            <div
+              class="p-card-content d-flex flex-column justify-content-center ms-lg-5"
+            >
+              <p><span class="fw-bold">Name:</span> Furkan Ateş</p>
+              <p><span class="fw-bold">Profile:</span> Frontend Devoloper</p>
+              <p><span class="fw-bold">Email:</span> contact@example.com</p>
+              <p><span class="fw-bold">Phone:</span> 555-555-55-55</p>
+            </div>
+          </div>
+          <div class="me-skill mt-3 mt-lg5">
+            <h4>Skill</h4>
+
+            <p class="mb-2">Html %90</p>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 90%"
+              ></div>
+            </div>
+            <p class="mt-2 mb-2">Css %85</p>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 85%"
+              ></div>
+            </div>
+            <p class="mt-2 mb-2">Javascript %70</p>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 60%"
+              ></div>
+            </div>
+            <p class="mt-2 mb-2">React.js %60</p>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                role="progressbar"
+                style="width: 60%"
+              ></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-me-text col-xl-6">
+          <h2 class="a-title mt-5 mt-lg-0 mb-5">About me</h2>
+          <p class="a-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni
+            quibusdam aut, quaerat possimus deserunt harum quam earum nisi ad,
+            laudantium maxime maiores aperiam tempora eligendi doloremque magnam
+            qui. Fugit, modi. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Ex veniam explicabo hic laudantium corporis cum, totam eos,
+            quae voluptate, reprehenderit labore! Voluptas blanditiis illo
+            mollitia expedita corrupti error autem inventore. Lorem ipsum dolor
+            sit amet consectetur, adipisicing elit. Magni quibusdam aut, quaerat
+            possimus deserunt harum quam earum nisi ad, laudantium maxime
+            maiores aperiam tempora eligendi doloremque magnam qui. Fugit, modi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veniam
+            explicabo hic laudantium corporis cum, totam eos, quae voluptate,
+            reprehenderit labore! Voluptas blanditiis illo mollitia expedita
+            corrupti error autem inventore.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- !About End -->
+
+    <!-- !Services Start -->
+    <section id="services">
+      <h1 class="text-center">Servicecs</h1>
+      <h5 class="text-center s-subTitle mb-5">
+        Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+      </h5>
+      <div class="s-box-container row col-12 m-0">
+        <div class="s-box col-md-6 col-xl-4 d-flex flex-column text-center p-3">
+          <div class="s-content bg-white">
+            <h1 class="s-title"><i class="bi bi-briefcase"></i></h1>
+            <h2>WEB DESIGN</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio id,
+              incidunt dolorem rerum dolorum hic ipsum voluptatibus impedit a
+              optio at magnam magni, maxime ratione natus autem modi dicta
+              ullam!
+            </p>
+          </div>
+        </div>
+
+        <div class="s-box col-md-6 col-xl-4 d-flex flex-column text-center p-3">
+          <div class="s-content bg-white">
+            <h1 class="s-title"><i class="bi bi-card-checklist"></i></h1>
+            <h2>WEB DESIGN</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio id,
+              incidunt dolorem rerum dolorum hic ipsum voluptatibus impedit a
+              optio at magnam magni, maxime ratione natus autem modi dicta
+              ullam!
+            </p>
+          </div>
+        </div>
+
+        <div class="s-box col-md-6 col-xl-4 d-flex flex-column text-center p-3">
+          <div class="s-content bg-white">
+            <h1 class="s-title"><i class="bi bi-bar-chart"></i></h1>
+            <h2>WEB DESIGN</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio id,
+              incidunt dolorem rerum dolorum hic ipsum voluptatibus impedit a
+              optio at magnam magni, maxime ratione natus autem modi dicta
+              ullam!
+            </p>
+          </div>
+        </div>
+
+        <div class="s-box col-md-6 col-xl-4 d-flex flex-column text-center p-3">
+          <div class="s-content bg-white">
+            <h1 class="s-title"><i class="bi bi-binoculars"></i></h1>
+            <h2>WEB DESIGN</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio id,
+              incidunt dolorem rerum dolorum hic ipsum voluptatibus impedit a
+              optio at magnam magni, maxime ratione natus autem modi dicta
+              ullam!
+            </p>
+          </div>
+        </div>
+
+        <div class="s-box col-md-6 col-xl-4 d-flex flex-column text-center p-3">
+          <div class="s-content bg-white">
+            <h1 class="s-title"><i class="bi bi-sun"></i></h1>
+            <h2>WEB DESIGN</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio id,
+              incidunt dolorem rerum dolorum hic ipsum voluptatibus impedit a
+              optio at magnam magni, maxime ratione natus autem modi dicta
+              ullam!
+            </p>
+          </div>
+        </div>
+
+        <div class="s-box col-md-6 col-xl-4 d-flex flex-column text-center p-3">
+          <div class="s-content bg-white">
+            <h1 class="s-title"><i class="bi bi-shop-window"></i></h1>
+            <h2>WEB DESIGN</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio id,
+              incidunt dolorem rerum dolorum hic ipsum voluptatibus impedit a
+              optio at magnam magni, maxime ratione natus autem modi dicta
+              ullam!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="s-datas-container row m-0">
+        <div class="bg-cover-blue"></div>
+        <div
+          class="s-data-box col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1><i class="bi bi-check"></i></h1>
+          <div class="num" data-count="450">0</div>
+          <p>WORKS COMPLETED</p>
+        </div>
+        <div
+          class="s-data-box col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1><i class="bi bi-journal-richtext"></i></h1>
+          <div class="num" data-count="25">0</div>
+          <p>YEARS OF EXPERIENCE</p>
+        </div>
+        <div
+          class="s-data-box col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1><i class="bi bi-people"></i></h1>
+          <div class="num" data-count="15">0</div>
+          <p>TOTAL CLIENTS</p>
+        </div>
+        <div
+          class="s-data-box col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center"
+        >
+          <h1><i class="bi bi-award"></i></h1>
+          <div class="num" data-count="90">0</div>
+          <p>AWARD WON</p>
+        </div>
+      </div>
+    </section>
+    <!-- !Services End -->
+
+    <!-- !Work Start-->
+    <section id="work" class="pb-5">
+      <h1 class="text-center pt-5">PORTFOLIO</h1>
+      <h5 class="text-center w-subTitle mb-5">Lorem ipsum dolor sit amet.</h5>
+      <div class="w-box-container position-relative row p-0 m-0">
+        <div class="card-box col-sm-6 col-lg-4 p-2">
+          <div class="card p-0 position-relative">
+            <a
+              class=""
+              data-bs-toggle="offcanvas"
+              href="#offcanvasWork1"
+              role="button"
+            >
+              <img class="img-fluid card-img" src="img/work-1.jpg" alt="" />
+            </a>
+            <div class="card-body">
+              <h4 class="mt-3">Lorem, ipsum dolor</h4>
+              <p class="text-muted">
+                <span class="text-info">Web Design</span>/18 Sep 2022
+              </p>
+              <a href="#" class="position-absolute end-0 bottom-0 m-3 text-info"
+                ><i class="bi bi-plus-circle h1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-sm-6 col-lg-4 p-2">
+          <div class="card p-0 position-relative">
+            <a
+              class=""
+              data-bs-toggle="offcanvas"
+              href="#offcanvasWork2"
+              role="button"
+            >
+              <img class="img-fluid card-img" src="img/work-2.jpg" alt="" />
+            </a>
+            <div class="card-body">
+              <h4 class="mt-3">Lorem, ipsum dolor</h4>
+              <p class="text-muted">
+                <span class="text-info">Web Design</span>/18 Sep 2022
+              </p>
+              <a href="#" class="position-absolute end-0 bottom-0 m-3 text-info"
+                ><i class="bi bi-plus-circle h1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-sm-6 col-lg-4 p-2">
+          <div class="card p-0 position-relative">
+            <a
+              class=""
+              data-bs-toggle="offcanvas"
+              href="#offcanvasWork3"
+              role="button"
+            >
+              <img class="img-fluid card-img" src="img/work-3.jpg" alt="" />
+            </a>
+            <div class="card-body">
+              <h4 class="mt-3">Lorem, ipsum dolor</h4>
+              <p class="text-muted">
+                <span class="text-info">Web Design</span>/18 Sep 2022
+              </p>
+              <a href="#" class="position-absolute end-0 bottom-0 m-3 text-info"
+                ><i class="bi bi-plus-circle h1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-sm-6 col-lg-4 p-2">
+          <div class="card p-0 position-relative">
+            <a
+              class=""
+              data-bs-toggle="offcanvas"
+              href="#offcanvasWork4"
+              role="button"
+            >
+              <img class="img-fluid card-img" src="img/work-4.jpg" alt="" />
+            </a>
+            <div class="card-body">
+              <h4 class="mt-3">Lorem, ipsum dolor</h4>
+              <p class="text-muted">
+                <span class="text-info">Web Design</span>/18 Sep 2022
+              </p>
+              <a href="#" class="position-absolute end-0 bottom-0 m-3 text-info"
+                ><i class="bi bi-plus-circle h1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-sm-6 col-lg-4 p-2">
+          <div class="card p-0 position-relative">
+            <a
+              class=""
+              data-bs-toggle="offcanvas"
+              href="#offcanvasWork5"
+              role="button"
+            >
+              <img class="img-fluid card-img" src="img/work-5.jpg" alt="" />
+            </a>
+            <div class="card-body">
+              <h4 class="mt-3">Lorem, ipsum dolor</h4>
+              <p class="text-muted">
+                <span class="text-info">Web Design</span>/18 Sep 2022
+              </p>
+              <a href="#" class="position-absolute end-0 bottom-0 m-3 text-info"
+                ><i class="bi bi-plus-circle h1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-box col-sm-6 col-lg-4 p-2">
+          <div class="card p-0 position-relative">
+            <a
+              class=""
+              data-bs-toggle="offcanvas"
+              href="#offcanvasWork6"
+              role="button"
+            >
+              <img class="img-fluid card-img" src="img/work-6.jpg" alt="" />
+            </a>
+            <div class="card-body">
+              <h4 class="mt-3">Lorem, ipsum dolor</h4>
+              <p class="text-muted">
+                <span class="text-info">Web Design</span>/18 Sep 2022
+              </p>
+              <a href="#" class="position-absolute end-0 bottom-0 m-3 text-info"
+                ><i class="bi bi-plus-circle h1"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- Card offcanvas -->
+        <div
+          class="offcanvas overflow-hidden w-75 h-75"
+          tabindex="-1"
+          id="offcanvasWork1"
+        >
+          <div
+            class="offcanvas-body p-0 d-flex justify-content-center align-items-center"
+          >
+            <button
+              type="button"
+              class="btn-close text-reset position-absolute top-0 end-0 m-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <img class="img-fluid m-0" src="img/work-1.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="offcanvas overflow-hidden w-75 h-75"
+          tabindex="-1"
+          id="offcanvasWork2"
+        >
+          <div
+            class="offcanvas-body p-0 d-flex justify-content-center align-items-center"
+          >
+            <button
+              type="button"
+              class="btn-close text-reset position-absolute top-0 end-0 m-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <img class="img-fluid m-0" src="img/work-2.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="offcanvas overflow-hidden w-75 h-75"
+          tabindex="-1"
+          id="offcanvasWork3"
+        >
+          <div
+            class="offcanvas-body p-0 d-flex justify-content-center align-items-center"
+          >
+            <button
+              type="button"
+              class="btn-close text-reset position-absolute top-0 end-0 m-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <img class="img-fluid m-0" src="img/work-3.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="offcanvas overflow-hidden w-75 h-75"
+          tabindex="-1"
+          id="offcanvasWork4"
+        >
+          <div
+            class="offcanvas-body p-0 d-flex justify-content-center align-items-center"
+          >
+            <button
+              type="button"
+              class="btn-close text-reset position-absolute top-0 end-0 m-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <img class="img-fluid m-0" src="img/work-4.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="offcanvas overflow-hidden w-75 h-75"
+          tabindex="-1"
+          id="offcanvasWork5"
+        >
+          <div
+            class="offcanvas-body p-0 d-flex justify-content-center align-items-center"
+          >
+            <button
+              type="button"
+              class="btn-close text-reset position-absolute top-0 end-0 m-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <img class="img-fluid m-0" src="img/work-5.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="offcanvas overflow-hidden w-75 h-75"
+          tabindex="-1"
+          id="offcanvasWork6"
+        >
+          <div
+            class="offcanvas-body p-0 d-flex justify-content-center align-items-center"
+          >
+            <button
+              type="button"
+              class="btn-close text-reset position-absolute top-0 end-0 m-4"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+            <img class="img-fluid m-0" src="img/work-6.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !Work End-->
+
+    <!-- !Divider Start -->
+    <section
+      id="divider"
+      class="position-relative d-flex flex-column justify-content-center align-items-center"
+      style="background-image: url(img/overlay-bg.jpg)"
+    >
+      <div class="overlay-filter position-absolute"></div>
+      <div class="d-content">
+        <img src="img/my-logo.jpg" alt="" />
+        <h1>Furkan Ateş</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat,
+          rerum!
+        </p>
+      </div>
+    </section>
+    <!-- !Divider End -->
+
+    <!-- !Blog Start-->
+    <section id="blog" class="py-5">
+      <h1 class="b-title text-center">Blog</h1>
+      <p class="b-subTitle text-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, cum.
+      </p>
+      <div class="blog-box-container row col-11 mx-auto m-0">
+        <div class="blog-box col-sm-6 col-lg-4 p-2">
+          <div class="card">
+            <div class="position-relative">
+              <a href="#">
+                <img
+                  class="card-img-top img-fluid"
+                  src="img/post-1.jpg"
+                  alt=""
+                />
+              </a>
+              <span
+                class="text-white bg-primary rounded-3 p-2 position-absolute top-100 start-50 translate-middle"
+                >Travel</span
+              >
+            </div>
+            <div class="card-body pt-4">
+              <h4 class="b-card-title">See more ideas about Travel</h4>
+              <p class="b-card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                dapibus. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <img
+                  class="rounded-circle"
+                  src="img/my-logo.jpg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <span>Furkan Ateş</span>
+              </div>
+
+              <span><i class="bi bi-clock"></i> 10 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog-box col-sm-6 col-lg-4 p-2">
+          <div class="card">
+            <div class="position-relative">
+              <a href="#">
+                <img
+                  class="card-img-top img-fluid"
+                  src="img/post-2.jpg"
+                  alt=""
+                />
+              </a>
+              <span
+                class="text-white bg-primary rounded-3 p-2 position-absolute top-100 start-50 translate-middle"
+                >WEB DESIGN</span
+              >
+            </div>
+            <div class="card-body pt-4">
+              <h4 class="b-card-title">See more ideas about Travel</h4>
+              <p class="b-card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                dapibus. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <img
+                  class="rounded-circle"
+                  src="img/my-logo.jpg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <span>Furkan Ateş</span>
+              </div>
+
+              <span><i class="bi bi-clock"></i> 10 min</span>
+            </div>
+          </div>
+        </div>
+        <div class="blog-box col-sm-6 col-lg-4 p-2">
+          <div class="card">
+            <div class="position-relative">
+              <a href="#">
+                <img
+                  class="card-img-top img-fluid"
+                  src="img/post-3.jpg"
+                  alt=""
+                />
+              </a>
+              <span
+                class="text-white bg-primary rounded-3 p-2 position-absolute top-100 start-50 translate-middle"
+                >WEB DESIGN</span
+              >
+            </div>
+            <div class="card-body pt-4">
+              <h4 class="b-card-title">See more ideas about Travel</h4>
+              <p class="b-card-description">
+                Proin eget tortor risus. Pellentesque in ipsum id orci porta
+                dapibus. Praesent sapien massa, convallis a pellentesque nec,
+                egestas non nisi.
+              </p>
+            </div>
+            <div
+              class="card-footer d-flex justify-content-between align-items-center"
+            >
+              <div>
+                <img
+                  class="rounded-circle"
+                  src="img/my-logo.jpg"
+                  alt=""
+                  style="width: 30px"
+                />
+                <span>Furkan Ateş</span>
+              </div>
+
+              <span><i class="bi bi-clock"></i> 10 min</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !Blog End-->
+
+    <!-- !Contact Start-->
+    <section
+      id="contact"
+      class="position-relative d-flex flex-column justify-content-center align-items-center py-5"
+      style="background-image: url(img/overlay-bg.jpg)"
+    >
+      <div class="overlay-filter position-absolute"></div>
+
+      <div class="contact-container row col-11 bg-white p-5">
+        <div class="contact-box col-lg-6 d-flex flex-column">
+          <h2 class="c-title mb-5">Send Message Us</h2>
+          <form action="">
+            <input
+              class="form-control mb-3"
+              type="text"
+              name=""
+              placeholder="Your Name"
+              required
+            />
+            <input
+              class="form-control mb-3"
+              type="email"
+              name=""
+              placeholder="Your Email"
+              required
+            />
+            <input
+              class="form-control mb-3"
+              type="text"
+              name=""
+              placeholder="Subject"
+              required
+            />
+            <textarea
+              rows="4"
+              cols="50"
+              maxlength="150"
+              class="form-control mb-3"
+              type="text"
+              name=""
+              placeholder="Message"
+              required
+            ></textarea>
+            <button
+              class="btn btn-primary btn-lg position-relative start-50 translate-middle-x mb-3 mb-sm-0"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="contact-box col-lg-6">
+          <h2 class="c-title mb-5">Get in Touch</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam
+            magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+            mollitia inventore?
+          </p>
+          <p>
+            <i class="bi bi-geo-alt text-primary"></i> 329 WASHINGTON ST BOSTON,
+            MA 02108
+          </p>
+          <p><i class="bi bi-phone text-primary"></i> (617) 557-0089</p>
+          <p class="mb-lg-4">
+            <i class="bi bi-envelope text-primary"></i> contact@example.com
+          </p>
+          <div class="social-medias d-flex justify-content-between w-25">
+            <a href=""> <i class="bi bi-facebook"> </i></a>
+            <a href=""> <i class="bi bi-twitter text-info"></i></a>
+            <a href=""> <i class="bi bi-instagram text-warning"></i></a>
+            <a href=""> <i class="bi bi-youtube text-danger"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !Contact End-->
+
+    <!-- !Footer Start -->
+
+    <div class="footer text-center text-white py-3">
+      © Copyright DevFolio. All Rights Reserved
+      <br />
+      Designed by BootstrapMade
+    </div>
+    <!-- !Footer End -->
+
+    <!--  !Boostrap-5 Js Link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- !Js Link -->
+    <script src="Js/All.js"></script>
+  </body>
+</html>
